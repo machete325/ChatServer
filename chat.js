@@ -10,7 +10,6 @@ const io = require('socket.io')(server, {
 });
 const cors = require('cors');
 const user = require('./routes/user');
-const router = require('./routes/user');
 
 const PORT = 4000 || process.env.PORT;
 
