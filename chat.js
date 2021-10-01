@@ -11,8 +11,6 @@ const io = require('socket.io')(server, {
 const cors = require('cors');
 const user = require('./routes/user');
 
-const PORT = 4000;
-
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -54,4 +52,4 @@ io.on('connection', (socket) => {
 
 app.use('/user', user);
 
-server.listen(PORT, () => console.log(`Server has been started on ${PORT} PORT`));
+server.listen(4000, () => console.log(`Server has been started on ${4000} PORT`));
