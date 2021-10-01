@@ -11,7 +11,7 @@ const io = require('socket.io')(server, {
 const cors = require('cors');
 const user = require('./routes/user');
 
-const PORT = 4000 || process.env.PORT;
+const PORT = 4000;
 
 app.use(cors());
 app.use(bodyParser.json());
