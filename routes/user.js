@@ -10,6 +10,10 @@ const users = [
     password: 1234,
     secret_key: '1234dwd35454',
     friends: [2, 3],
+    rooms: [
+      { id: '2', room: '124' },
+      { id: '3', room: '12456' },
+    ],
   },
   {
     id: '2',
@@ -18,6 +22,10 @@ const users = [
     password: 123456,
     secret_key: '123435454fefe',
     friends: [1, 3],
+    rooms: [
+      { id: '1', room: '124' },
+      { id: '3', room: '1245678' },
+    ],
   },
   {
     id: '3',
@@ -26,6 +34,10 @@ const users = [
     password: 12345,
     secret_key: '1dwdwgg23435454',
     friends: [1, 2],
+    rooms: [
+      { id: '1', room: '12456' },
+      { id: '2', room: '1245678' },
+    ],
   },
 ];
 
