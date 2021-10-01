@@ -41,7 +41,7 @@ io.on('connection', (socket) => {
     });
   });
 
-  socket.on('leave_room', (room_name) => {
+  socket.on('leave_room', ({ room_name }) => {
     socket.leave(room_name);
     console.log('Leaving Room, Room Name: ' + room_name);
     console.log(socket.rooms);
